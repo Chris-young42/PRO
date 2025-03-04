@@ -1,8 +1,8 @@
 <template>
   <div class="find"></div>
   <el-radio-group v-model="isCollapse" style="margin-bottom: 20px">
-    <el-radio-button :value="false">expand</el-radio-button>
-    <el-radio-button :value="true">collapse</el-radio-button>
+    <el-radio-button :value="false">视图流</el-radio-button>
+    <el-radio-button :value="true">收起</el-radio-button>
   </el-radio-group>
   <el-menu default-active="2" class="el-menu-vertical-demo" :collapse="isCollapse" @open="handleOpen"
     @close="handleClose">
@@ -11,12 +11,12 @@
         <el-icon>
           <location />
         </el-icon>
-        <span>Navigator One</span>
+        <span>个人中心</span>
       </template>
       <el-menu-item-group>
-        <template #title><span>Group One</span></template>
-        <el-menu-item index="1-1">item one</el-menu-item>
-        <el-menu-item index="1-2">item two</el-menu-item>
+        <template #title><span>收集信息</span></template>
+        <el-menu-item index="1-1">系统管理</el-menu-item>
+        <el-menu-item index="1-2">文档流</el-menu-item>
       </el-menu-item-group>
       <el-menu-item-group title="Group Two">
         <el-menu-item index="1-3">item three</el-menu-item>
@@ -28,7 +28,7 @@
     </el-sub-menu>
     <el-menu-item index="2">
       <el-icon><icon-menu /></el-icon>
-      <template #title>Navigator Two</template>
+      <template #title>视觉排版</template>
     </el-menu-item>
     <el-menu-item index="3" disabled>
       <el-icon>
